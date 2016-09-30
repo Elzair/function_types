@@ -8,3 +8,5 @@ target_include_directories(boost_function_types BEFORE INTERFACE ${CMAKE_CURRENT
 
 install(TARGETS boost_function_types DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::function_types ALIAS boost_function_types)
